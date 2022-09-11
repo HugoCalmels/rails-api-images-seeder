@@ -4,8 +4,29 @@ class PostImagesController < ApplicationController
   # GET /post_images
   def index
     @post_images = PostImage.all
+    @post_images2 = PostImage.all
+    @post_images3 = PostImage.all
+    @post_images4 = PostImage.all
+    @post_images5 = PostImage.all
+    @post_images6 = PostImage.all
+    @post_images7 = PostImage.all
+    @post_images8 = PostImage.all
+    @post_images9 = PostImage.all
+    @post_images10 = PostImage.all
 
-    render json: @post_images
+    res.push(@post_images)
+    res.push(@post_images2)
+    res.push(@post_images3)
+    res.push(@post_images4)
+    res.push(@post_images5)
+    res.push(@post_images6)
+    res.push(@post_images7)
+    res.push(@post_images8)
+    res.push(@post_images9)
+    res.push(@post_images10)
+
+
+    render json: res
   end
 
   # GET /post_images/1

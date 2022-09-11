@@ -3,9 +3,21 @@ class AvatarImagesController < ApplicationController
 
   # GET /avatar_images
   def index
+    res = []
     @avatar_images = AvatarImage.all
+    @avatar_images2 = AvatarImage.all
+    @avatar_images3 = AvatarImage.all
+    @avatar_images4 = AvatarImage.all
+    @avatar_images5 = AvatarImage.all
 
-    render json: @avatar_images
+    res.push(@avatar_images)
+    res.push(@avatar_images2)
+    res.push(@avatar_images3)
+    res.push(@avatar_images4)
+    res.push(@avatar_images5)
+
+
+    render json: res
   end
 
   # GET /avatar_images/1

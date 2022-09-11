@@ -3,9 +3,20 @@ class HeroImagesController < ApplicationController
 
   # GET /hero_images
   def index
+    res = []
     @hero_images = HeroImage.all
+    @hero_images2 = HeroImage.all
+    @hero_images3 = HeroImage.all
+    @hero_images4 = HeroImage.all
+    @hero_images5 = HeroImage.all
 
-    render json: @hero_images
+    res.push(@hero_images)
+    res.push(@hero_images2)
+    res.push(@hero_images3)
+    res.push(@hero_images4)
+    res.push(@hero_images5)
+
+    render json: res
   end
 
   # GET /hero_images/1
