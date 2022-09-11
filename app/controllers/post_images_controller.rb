@@ -4,16 +4,16 @@ class PostImagesController < ApplicationController
   # GET /post_images
   def index
     res = []
-    @post_images = PostImage.all
-    @post_images2 = PostImage.all
-    @post_images3 = PostImage.all
-    @post_images4 = PostImage.all
-    @post_images5 = PostImage.all
-    @post_images6 = PostImage.all
-    @post_images7 = PostImage.all
-    @post_images8 = PostImage.all
-    @post_images9 = PostImage.all
-    @post_images10 = PostImage.all
+    @post_images = PostImage.all.shuffle
+    @post_images2 = PostImage.all.shuffle
+    @post_images3 = PostImage.all.shuffle
+    @post_images4 = PostImage.all.shuffle
+    @post_images5 = PostImage.all.shuffle
+    @post_images6 = PostImage.all.shuffle
+    @post_images7 = PostImage.all.shuffle
+    @post_images8 = PostImage.all.shuffle
+    @post_images9 = PostImage.all.shuffle
+    @post_images10 = PostImage.all.shuffle
 
     res = @post_images + @post_images2 + @post_images3 + @post_images4 +  @post_images5 + @post_images6 + @post_images7 + @post_images8 + @post_images9 +  @post_images10
 
