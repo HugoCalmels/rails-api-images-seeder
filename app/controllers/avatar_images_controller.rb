@@ -10,11 +10,7 @@ class AvatarImagesController < ApplicationController
     @avatar_images4 = AvatarImage.all
     @avatar_images5 = AvatarImage.all
 
-    res.push(@avatar_images)
-    res.push(@avatar_images2)
-    res.push(@avatar_images3)
-    res.push(@avatar_images4)
-    res.push(@avatar_images5)
+    res = @avatar_images + @avatar_images2 + @avatar_images3 + @avatar_images4 +  @avatar_images5
 
 
     render json: res
