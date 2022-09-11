@@ -10,11 +10,7 @@ class HeroImagesController < ApplicationController
     @hero_images4 = HeroImage.all
     @hero_images5 = HeroImage.all
 
-    res.push(@hero_images)
-    res.push(@hero_images2)
-    res.push(@hero_images3)
-    res.push(@hero_images4)
-    res.push(@hero_images5)
+    res = @hero_images + @hero_images2 + @hero_images3 + @hero_images4 +  @hero_images5
 
     render json: res
   end

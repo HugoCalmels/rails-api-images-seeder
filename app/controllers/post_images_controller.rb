@@ -3,6 +3,7 @@ class PostImagesController < ApplicationController
 
   # GET /post_images
   def index
+    res = []
     @post_images = PostImage.all
     @post_images2 = PostImage.all
     @post_images3 = PostImage.all
@@ -14,16 +15,7 @@ class PostImagesController < ApplicationController
     @post_images9 = PostImage.all
     @post_images10 = PostImage.all
 
-    res.push(@post_images)
-    res.push(@post_images2)
-    res.push(@post_images3)
-    res.push(@post_images4)
-    res.push(@post_images5)
-    res.push(@post_images6)
-    res.push(@post_images7)
-    res.push(@post_images8)
-    res.push(@post_images9)
-    res.push(@post_images10)
+    res = @hero_images + @hero_images2 + @hero_images3 + @hero_images4 +  @hero_images5 + @hero_images6 + @hero_images7 + @hero_image38 + @hero_images9 +  @hero_images10
 
 
     render json: res
