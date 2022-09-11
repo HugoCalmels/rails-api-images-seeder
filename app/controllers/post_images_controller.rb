@@ -15,7 +15,7 @@ class PostImagesController < ApplicationController
     @post_images9 = PostImage.all
     @post_images10 = PostImage.all
 
-    res = @post_images + @post_images2 + @post_images3 + @post_images4 +  @post_images5 + @post_images6 + @post_images7 + @post_image8 + @post_images9 +  @post_images10
+    res = @post_images + @post_images2 + @post_images3 + @post_images4 +  @post_images5 + @post_images6 + @post_images7 + @post_images8 + @post_images9 +  @post_images10
 
 
     render json: res
