@@ -17,13 +17,6 @@ class HerosController < ApplicationController
   def create
     @hero = Hero.new(hero_params)
 
-    puts "ooooooooooooooooo"
-    puts "ooooooooooooooooo"
-    puts hero_params
-    puts params
-    puts "ooooooooooooooooo"
-
-    puts "ooooooooooooooooo"
     if @hero.save
       render json: @hero, status: :created, location: @hero
     else
